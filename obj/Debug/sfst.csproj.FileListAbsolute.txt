@@ -1,0 +1,13 @@
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\sfst.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\sfst.pdb
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\CitizenFX.Core.Client.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\FivePD.net.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\NativeUI.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\ScriptHookVDotNet2.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\CitizenFX.Core.Client.xml
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Debug\FivePD.net.xml
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Debug\sfst.csproj.AssemblyReference.cache
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Debug\sfst.csproj.CoreCompileInputs.cache
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Debug\sfst.csproj.CopyComplete
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Debug\sfst.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Debug\sfst.pdb

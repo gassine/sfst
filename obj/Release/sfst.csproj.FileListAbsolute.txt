@@ -1,0 +1,13 @@
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\CitizenFX.Core.Client.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\FivePD.net.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\NativeUI.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\CitizenFX.Core.Client.xml
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\FivePD.net.xml
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Release\sfst.csproj.AssemblyReference.cache
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Release\sfst.csproj.CoreCompileInputs.cache
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Release\sfst.csproj.CopyComplete
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\sfst.net.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\sfst.net.pdb
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Release\sfst.net.dll
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\obj\Release\sfst.net.pdb
+C:\Users\Alien\Documents\GitHub\sfst\fivepd-sfst\sfst\bin\Release\MenuAPI.dll

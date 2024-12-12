@@ -43,27 +43,73 @@ namespace sfst
         internal sfstPlugin()
         {
             AddSfstOptions();
+            registerSfstMenu();
             // NOTE: Add an option to do an observation check that will tell information about the suspect
             // NOTE: Add another option to do a smell check that will check if the window is open to get smell information
             // NOTE: Add an option to ask the ped to open the window
             // NOTE: Add a submenu to SHOW how the test must be done so the animations display on the player
             // NOTE: Add a section for consent questions
             // Evaluate modifying FivePD database to add data to it that can be consulted later on
-            Tick += checkIfMenuKeyIsPressed;
+
+            // Below only needed if we need to hardcode execution to keybind
+            //Tick += checkIfMenuKeyIsPressed;
         }
 
+        private void registerSfstMenu()
+        {
+            // Here we are registering the command with the client. It does not need to be on tick as after it registers 1 time, it will remain on.
+            API.RegisterCommand("sfst", new Action(() => {
+
+                // Here we are going to check if the player is on duty
+                if (!Utilities.IsPlayerOnDuty())
+                {
+                    Screen.ShowNotification("You are currently not on duty.");
+                    return;
+                }
+
+                // Here we are going to check if the player is on foot
+                if (Game.PlayerPed.IsInVehicle())
+                {
+                    Screen.ShowNotification("You must be on foot.");
+                    return;
+                }
+
+                // With this we are activating or deactivating the menu
+                sfstMenu.Visible = !sfstMenu.Visible;
+
+            }), false);
+
+            // This registers they key to be customizable on FiveM directly.
+            API.RegisterKeyMapping("sfst", "Standardized Field Sobriety Testing Menu", "keyboard", "F3");
+        }
 
         // This is is what will happen on every tick
+        /*
         public async Task checkIfMenuKeyIsPressed()
         {         
             // Now we are checking if the player is pressing the proper key to activate the menu
-            if (Game.IsControlJustPressed(0, Control.DropWeapon)) // Check if a specific key is pressed (use F5 as an example)
+            // This piece of code is to execute it hard coded on F3
+            
+            if (Game.IsControlJustPressed(0, Control.SaveReplayClip)) // Check if a specific key is pressed (use F5 as an example)
             {
+                // Here we are going to check 
+                if (!Utilities.IsPlayerOnDuty())
+                {
+                    Screen.ShowNotification("You are currently not on duty.");
+                    return;
+                }
+
+                if (Game.PlayerPed.IsInVehicle())
+                {
+                    Screen.ShowNotification("You must be on foot.");
+                    return;
+                }
                 // With this we are activating or deactivating the menu
                 sfstMenu.Visible = !sfstMenu.Visible;
             }
+            
         }
-        
+        */
 
         public void AddSfstOptions() // Method to add options to the menu
         {
@@ -101,7 +147,7 @@ namespace sfst
         {
             if (!Utilities.IsPlayerPerformingTrafficStop())
             {
-                Screen.ShowNotification("You are currently not in a traffic stop");
+                Screen.ShowNotification("You are currently not in a traffic stop.");
                 return;
             }
 
